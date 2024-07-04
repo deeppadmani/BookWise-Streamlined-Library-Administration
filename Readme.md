@@ -60,21 +60,20 @@ python3 -m venv venv
 
 Activate the virtual environment
 ```sh
-env\Scripts\activate
+venv\Scripts\activate
 ```
 In the virtual environment execute the following command
 ```sh
-install Django pip install django
-install mysql pip install mysql
-install connectors pip install mysql-connector 
+pip install django
+pip install mysql
+pip install mysql-connector 
 pip install mysql-connector-python 
 pip install mysqlclient
-install python library pip install pandas
+pip install pandas
 ```
 Now Open BookWise-Streamlined-Library-Administration\myDJango\my_Django and run 
 ```sh
 python CreateDataBase.py #Creates a Schema in mysql named BookList. You can check it in your mysql
-make migrations 
 python manage.py makemigrations
 python manage.py migrate
 ```
